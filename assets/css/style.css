@@ -1,0 +1,134 @@
+body {
+    overflow-x: hidden;
+}
+
+/* fixe nav bat at top */
+#navfixed {
+    background: transparent!important;
+    border: 0;
+}
+.afterScroll  {
+    border: 0;
+    animation: yourCustomAnimation 1s;
+    animation-fill-mode: both
+}
+@keyframes yourCustomAnimation {
+    from {
+        background: transparent;
+        border-bottom: 0;
+    }
+    to {
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.nav-item {
+    color: white!important;
+}
+.nav-item.navbar-brand{
+    font-size: 40px;
+}
+
+/* first page css */
+#first-page {
+    height: 100vh;
+}
+.header {
+    color: white;
+    z-index: 1;
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+.header h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.header p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+    .header p {
+        font-size: 15px;
+    }
+    #logo {
+        font-size: 30px;
+    }
+}
+
+#arrow-one {
+    animation-duration: 2s;
+    
+    animation-iteration-count: infinite;
+}
+#arrow-two {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+/* Second page css */
+#second-page {
+    width: 100%;
+    height: 100vh;
+}
+#second-page .row {
+    padding-top: 200px;
+}
+#second-page .row .left-text{
+    z-index: 1;
+    position: relative; 
+    font-size: 40px; 
+    color: white
+}
+#second-page .row .container .col-md-4 {
+    z-index: 1; position: relative; font-size: 40px; color: white; margin-top: 20px;
+}
+#second-page .row .container .col-md-8 {
+    z-index: 1; position: relative; font-size: 30px; color: white; margin-top: 20px;
+}
+@media (max-width: 768px) {
+    #second-page .row .left-text{ 
+        text-align: center; 
+        font-size: 30px; 
+        color: white
+    } 
+    #second-page .row {
+        padding-top: 70px;
+    }
+    #second-page .row .container .col-md-8 p {
+        font-size: 20px;
+    }
+}
+/* Third page */
+#third-page {
+    width: 100%;
+    height: 100vh;
+}
+
+/* fourth page */
+#fourth-page {
+    width: 100%;
+    height: 100vh;
+    background: antiquewhite;
+}
+
+/* footer of the page */
+footer#at-the-end {
+    width: 100%;
+    height: 100px;
+    background: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.image {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
