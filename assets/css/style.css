@@ -1,5 +1,6 @@
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 /* fixe nav bat at top */
